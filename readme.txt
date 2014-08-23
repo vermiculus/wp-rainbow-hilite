@@ -43,6 +43,7 @@ Currently supported languages by Rainbow are
 - Scheme
 - Shell
 - Smalltalk
+- TeX
 
 There are some Hooks implemented allowing you to load your own language modules. Details [here](https://github.com/mcguffin/wp-rainbow-hilite#filters).
 

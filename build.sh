@@ -22,7 +22,8 @@ python ./sources/rainbow/util/compile.py \
     ruby \
     scheme \
     shell \
-    smalltalk
+    smalltalk \
+    plain-tex
 
 # compile core rainbow
 python ./sources/rainbow/util/compile.py --core
