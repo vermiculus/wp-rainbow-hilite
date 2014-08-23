@@ -3,7 +3,26 @@
 CLOSURE_COMPILER="/usr/local/compiler-latest/compiler.jar"
 
 # compile custom rainbow
-python ./sources/rainbow/util/compile.py c csharp coffeescript css d generic go haskell html java javascript lua php python r ruby scheme shell smalltalk 
+python ./sources/rainbow/util/compile.py \
+    c \
+    csharp \
+    coffeescript \
+    css \
+    d \
+    generic \
+    go \
+    haskell \
+    html \
+    java \
+    javascript \
+    lua \
+    php \
+    python \
+    r \
+    ruby \
+    scheme \
+    shell \
+    smalltalk
 
 # compile core rainbow
 python ./sources/rainbow/util/compile.py --core
