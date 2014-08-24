@@ -785,11 +785,10 @@ window['Rainbow'] = (function() {
  * adds event listener to start highlighting
  */
 (function() {
-	document.onreadystatechange = function () {
-		if ( document.readyState === "complete" ) {
-			Rainbow.color();
-		}
-	}
+    if (document.addEventListener) {
+        return document.addEventListener('DOMContentLoaded', Rainbow.color, false);
+    }
+    window.attachEvent('onload', Rainbow.color);
 }) ();
 
 // When using Google closure compiler in advanced mode some methods
