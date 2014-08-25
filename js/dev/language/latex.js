@@ -11,35 +11,14 @@ Rainbow.extend('latex', [
     },
     {
         'name': 'storage.function',
-        'pattern': /\\[A-z@]+/g
+        'pattern': /\\[A-Za-z@]+/g
     },
     {
         'matches':
         {
             1: 'entity.name.function',
-            2: 'string.open',
-            3: 'storage.entity.function',
-            4: 'string.close'
+            2: 'entity.class'
         },
-        'pattern': /(\\(begin|end))(\{)(.*?)(\})/g
-    },
-    {
-        'name': 'string',
-        'matches': {
-            1: 'string.open',
-            2: [{
-                'name': 'string.interpolation',
-                'matches': {
-                    1: 'string.open',
-                    2: {
-                      'language': 'ruby'
-                    },
-                    3: 'string.close'
-                },
-                'pattern': /(\#\{)(.*?)(\})/g
-            }],
-            3: 'string.close'
-        },
-        'pattern': /("|`)(.*?[^\\\1])?(\1)/g
+        'pattern': /(\\(?:begin|end))\s*\{(.*?)\}/g
     }
 ], true)
