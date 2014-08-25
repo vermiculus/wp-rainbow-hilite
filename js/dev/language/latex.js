@@ -17,9 +17,10 @@ Rainbow.extend('latex', [
         'matches':
         {
             1: 'entity.name.function',
-            2: 'storage.function',
-            3: 'comment'
+            2: 'string.open',
+            3: 'storage.entity.function',
+            4: 'string.close'
         },
-        'pattern': /(\\(begin|end))\{(.*?)\}/g
+        'pattern': /(\\(begin|end))(\{)(.*?)(\})/g
     }
 ], true)
