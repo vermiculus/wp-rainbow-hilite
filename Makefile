@@ -47,7 +47,7 @@ closure:
 submods:
 	git submodule init
 	git submodule update
-	cd sources/rainbow             && git pull origin master
-	cd sources/rainbow.linenumbers && git pull origin master
+	cd sources/rainbow             && git checkout master
+	cd sources/rainbow.linenumbers && git checkout master
 
 setup: closure submods
