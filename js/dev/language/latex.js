@@ -20,6 +20,6 @@ Rainbow.extend('latex', [
             2: 'storage.function',
             3: 'comment'
         },
-        'pattern': /(\\(begin|end))\{(.*)\}/g
+        'pattern': /(\\(begin|end))\{(.*?)\}/g
     }
 ], true)
