@@ -185,6 +185,7 @@ class WPRainbow {
 			'scheme'		=> __('Scheme','rainbow'),
 			'shell'			=> __('Shell script','rainbow'),
 			'smalltalk'		=> __('Smalltalk','rainbow'),
+                        'plain-tex' => __('Plain TeX','rainbow'),
 		);
 		return apply_filters( 'wprainbow_available_languages' , $langs );
 	}
