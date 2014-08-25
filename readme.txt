@@ -35,6 +35,7 @@ Currently supported languages by Rainbow are
 - HTML
 - Java
 - Javascript
+- LaTeX
 - Lua
 - PHP
 - Python

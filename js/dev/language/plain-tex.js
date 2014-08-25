@@ -1,3 +1,9 @@
+/**
+ * Plain TeX patterns
+ *
+ * @author Sean Allred <code@seanallred.com>
+ * @version 1.0
+ */
 Rainbow.extend('plain-tex', [
     {
         'name': 'comment',
