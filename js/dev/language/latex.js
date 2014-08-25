@@ -22,5 +22,24 @@ Rainbow.extend('latex', [
             4: 'string.close'
         },
         'pattern': /(\\(begin|end))(\{)(.*?)(\})/g
+    },
+    {
+        'name': 'string',
+        'matches': {
+            1: 'string.open',
+            2: [{
+                'name': 'string.interpolation',
+                'matches': {
+                    1: 'string.open',
+                    2: {
+                      'language': 'ruby'
+                    },
+                    3: 'string.close'
+                },
+                'pattern': /(\#\{)(.*?)(\})/g
+            }],
+            3: 'string.close'
+        },
+        'pattern': /("|`)(.*?[^\\\1])?(\1)/g
     }
 ], true)
