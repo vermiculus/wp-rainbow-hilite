@@ -15,6 +15,6 @@ Rainbow.extend('plain-tex', [
     },
     {
         'name': 'string',
-        'pattern': /$.*?$/g
+        'pattern': /\$.*?\$/g
     }
 ], true)
