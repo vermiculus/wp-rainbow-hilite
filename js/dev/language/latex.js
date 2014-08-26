@@ -11,7 +11,7 @@ Rainbow.extend('latex', [
     },
     {
         'name': 'storage.function',
-        'pattern': /\\[A-Za-z@]+/g
+        'pattern': /\\([A-Za-z@]+\*?|.)/g
     },
     {
         'matches':
@@ -19,6 +19,30 @@ Rainbow.extend('latex', [
             1: 'entity.name.function',
             2: 'entity.class'
         },
-        'pattern': /(\\(?:begin|end))\s*\{(.*?)\}/g
+        'pattern': /(\\(?:begin|end|documentclass))\s*\{([^\}]*)\}/g
+    },
+    {
+        'name': 'entity.name.function',
+        'pattern': /\$.*?\$/g
+    },
+    {
+        'matches':
+        {
+            1: 'entity.name.function',
+            2: 'tag'
+        },
+        'pattern': /(\\(?:(?:sub)?paragraph|(?:sub){0,3}section|chapter|part)\*?)\{([^\}]*)\}/g
+    },
+    {
+        'name': 'entity.name.function',
+        'pattern': /#./g
+    },
+    {
+        'matches':
+        {
+            1: 'entity.name.function',
+            2: 'tag'
+        },
+        'pattern': /(?:(\\newcommand\s*\{?)(\\(?:[A-Za-z]*))\}?(?:\[\d])?/g
     }
 ], true)

@@ -11,6 +11,10 @@ Rainbow.extend('plain-tex', [
     },
     {
         'name': 'storage.function',
-        'pattern': /\\[A-Za-z]+/g
+        'pattern': /\\([A-Za-z@]+\*?|.)/g
+    },
+    {
+        'name': 'string',
+        'pattern': /$.*?$/g
     }
 ], true)
