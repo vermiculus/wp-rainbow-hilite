@@ -43,6 +43,6 @@ Rainbow.extend('latex', [
             1: 'entity.name.function',
             2: 'tag'
         },
-        'pattern': /(?:(\\newcommand)\s*\{?)(\\(?:[A-Za-z]*))\}?(?:\[\d])?/g
+        'pattern': /(\\newcommand)\s*\{?(\\(?:[A-Za-z]*))\}?(?:\[\d\])?/g
     }
 ], true)
