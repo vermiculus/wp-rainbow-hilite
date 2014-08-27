@@ -187,6 +187,7 @@ class WPRainbow {
 			'smalltalk'		=> __('Smalltalk','rainbow'),
                         'plain-tex' => __('Plain TeX','rainbow'),
                         'latex' => __('LaTeX','rainbow'),
+                        'expl3' => __('expl3','rainbow'),
 		);
 		return apply_filters( 'wprainbow_available_languages' , $langs );
 	}

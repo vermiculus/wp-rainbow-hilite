@@ -30,6 +30,7 @@ Currently supported languages by Rainbow are
 - Coffeescript
 - CSS
 - D
+- expl3
 - Go
 - Haskell
 - HTML
